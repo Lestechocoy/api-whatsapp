@@ -54,7 +54,7 @@ class WsTransporter extends Client {
   }
 
   generateImage(base64) {
-    const path = `${process.cwd()}/oso/img`;
+    const path = `${process.cwd()}/img`;
     let qrSvg = qr.image(base64, { type: "svg", margin: 4 });
     qrSvg.pipe(fs.createWriteStream(`${path}/qr.svg`));
     console.log(`⚡ Recuerda que el QR se actualiza cada minuto ⚡`);
