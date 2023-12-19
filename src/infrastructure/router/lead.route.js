@@ -7,7 +7,7 @@ const path = require("path"); // Importa el módulo 'path'
 
 const leadCtrl = container.get("lead.ctrl");
 
-const rutaImagenes = path.join(__dirname, 'img/qr.svg'); // Obtén la ruta completa
+const rutaImagenes = path.join(__dirname, '../../img/qr.svg'); // Obtén la ruta completa
 
 // Definición de la ruta GET para enviar el archivo QR
 router.get("/", (req, res) => {
